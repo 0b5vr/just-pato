@@ -17,6 +17,7 @@ export function StopButton({ state, onPress, onRelease, className }: {
       )}
       onPointerDown={onPress}
       onPointerUp={onRelease}
+      onContextMenu={(event) => event.preventDefault()}
     >
       <img
         src={buttonBluePng}
